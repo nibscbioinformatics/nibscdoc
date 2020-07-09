@@ -1,11 +1,13 @@
 Package: nibscdoc
 Type: Package
-Title: What the Package Does (Title Case)
+Title: NIBSC documentation templates
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Francesco Lescai
+Maintainer: Francesco Lescai <francesco.lescai@nibsc.org>
+Description: The package (under active development) contains templates for Rmarkdown documents produced according to NIBSC standards. We aim at rendering analyses reports mostly in HTML, but templates have been developed for other formats as well.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 7.0.2
+Depends: 
+    bookdown
