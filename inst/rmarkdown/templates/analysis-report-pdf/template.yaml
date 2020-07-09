@@ -1,0 +1,4 @@
+name: analysis-report-pdf
+description: >
+   NIBSC Template for Analysis Reports in PDF
+create_dir: FALSE

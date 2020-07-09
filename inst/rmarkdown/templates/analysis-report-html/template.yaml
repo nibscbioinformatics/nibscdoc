@@ -1,0 +1,4 @@
+name: analysis-report-html
+description: >
+   NIBSC Template for Analysis Reports in HTML
+create_dir: FALSE

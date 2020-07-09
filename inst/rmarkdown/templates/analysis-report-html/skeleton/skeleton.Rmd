@@ -1,0 +1,14 @@
+---
+title: "Reporting Workflow"
+author: "Francesco Lescai"
+date: "18/11/2019"
+output: nibscdoc::report_html
+editor_options:
+  chunk_output_type: console
+---
+
+
+```{r, echo=FALSE, message=FALSE, error=FALSE, warning=FALSE}
+library(knitr)
+```
+
