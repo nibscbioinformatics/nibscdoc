@@ -1,18 +1,47 @@
 ---
-title: "Template Title"
-author: "Your Name"
-date: "The Date"
-output: output_format
+title: "Title of the Analysis"
+author: 
+  - "First Author"
+  - "Second Author"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: nibscdoc::report_word
+editor_options:
+  chunk_output_type: console
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+
+```{r, echo=FALSE, message=FALSE, error=FALSE, warning=FALSE}
+library(knitr)
 ```
 
-## Adding an RMarkdown Template
+# Introduction
 
-This file is what a user will see when they select your template. Make sure that you update the fields in the yaml header. In particular you will want to update the `output` field to whatever format your template requires.
+Write here an introduction about the overall goal of the analysis and the approach followed.
 
-This is a good place to demonstrate special features that your template provides. Ideally it should knit out-of-the-box, or at least contain clear instructions as to what needs changing.
+# Results
 
-Finally, be sure to remove this message!
+Brief overview of results to be presented
+
+## Analysis 1
+
+Results according to first approach or topic
+
+## Analysis 2
+
+Results according to second approach or topic
+
+### Subsection 1
+
+Section details
+
+### Subsection 2
+
+Section details
+
+# QC
+
+Plots and results or location of QC analyses.
+
+# Materials and Methods
+
+Detailed description of the methods.
