@@ -11,3 +11,6 @@ LazyData: true
 RoxygenNote: 7.0.2
 Depends: 
     bookdown
+Imports: 
+    lifecycle
+RdMacros: lifecycle

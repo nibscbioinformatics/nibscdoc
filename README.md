@@ -3,9 +3,14 @@
 
 <!-- badges: start -->
 [![R build status](https://github.com/nibscbioinformatics/nibscdoc/workflows/R-CMD-check/badge.svg)](https://github.com/nibscbioinformatics/nibscdoc/actions)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
-The goal of nibscdoc is to ...
+The goal of this package is to provide with basic templates for the key reports and documents produced by the Bioinformatics Core at NIBSC.
+
+
+**Warning:** currently only the html report is fully functional.
+
 
 ## Installation
 
