@@ -58,7 +58,7 @@ report_html <- function(...){
 #' @export
 #'
 #' @examples
-#' #' \dontrun{
+#' \dontrun{
 #'    output: nibscdoc::report_word
 #' }
 #' @import bookdown

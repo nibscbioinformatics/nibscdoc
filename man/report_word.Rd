@@ -17,7 +17,7 @@ This function is called in the output of the YAML header of the .Rmd file used t
 to specify the standard output desired as Word document
 }
 \examples{
-#' \dontrun{
+\dontrun{
    output: nibscdoc::report_word
 }
 }
