@@ -28,6 +28,19 @@ table {
 }
 
 .author {
+  font-size: 16px;
+  font-style: bold;
+  color: #18b2ed
+}
+
+.author_afil {
+  font-size: 14px;
+  font-style: italic;
+  color: #18b2ed
+}
+
+.author_email {
+  font-size: 14px;
   font-style: italic;
   color: #18b2ed
 }

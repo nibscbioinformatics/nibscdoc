@@ -9,7 +9,9 @@
 The goal of this package is to provide with basic templates for the key reports and documents produced by the Bioinformatics Core at NIBSC.
 
 
-**Warning:** currently only the html report is fully functional.
+**Warning:** 
+
+Currently only the html and word reports are fully functional. The package is under active development.
 
 
 ## Installation
