@@ -1,7 +1,13 @@
 ---
-title: "Reporting Workflow"
-author: "Francesco Lescai"
-date: "18/11/2019"
+title: "Analysis Report"
+author: 
+  - name: "First Author"
+    affiliation: "NIBSC"
+    email: "first.author@nibsc.org"
+  - name: "Second Author"
+    affiliation: "NIBSC"
+    email: "second.author@nibsc.org"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: nibscdoc::report_html
 editor_options:
   chunk_output_type: console
@@ -12,3 +18,16 @@ editor_options:
 library(knitr)
 ```
 
+# Introduction
+
+
+
+# Results
+
+## Analysis 1
+
+## Analysis 2
+
+# QC
+
+# Materials and Methods

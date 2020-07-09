@@ -16,7 +16,10 @@
 report_html <- function(...){
   cssfile <- system.file("rmarkdown/templates/analysis-report-html/assets/nibsc.css",
                                      package="nibscdoc")
+  templatefile <- system.file("rmarkdown/templates/analysis-report-html/assets/nibsc_template.html",
+                              package="nibscdoc")
   renderfunction <- bookdown::html_document2(...,
+    template = templatefile,
     css = cssfile,
     theme = "readable",
     highlight = "tango",
