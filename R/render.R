@@ -80,7 +80,6 @@ report_word <- function(...){
   renderfunction$knitr$opts_chunk$echo  <-  FALSE
   renderfunction$knitr$opts_chunk$results  <-  'asis'
   renderfunction$knitr$opts_chunk$fig.wide <- TRUE
-  renderfunction$knitr$opts_chunk$fig.align <- "center"
   renderfunction$knitr$opts_chunk$fig.path <- "figures/"
   renderfunction$knitr$opts_chunk$fig.pos <- "H"
   renderfunction$knitr$opts_chunk$out.width <- "100%"
