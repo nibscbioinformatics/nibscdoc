@@ -10,14 +10,16 @@
 #'
 #' @examples
 #' \dontrun{
-#'    output: nibscdoc::report_html
+#' output:nibscdoc::report_html
 #' }
 #' @import bookdown
-report_html <- function(...){
+report_html <- function(...) {
   cssfile <- system.file("rmarkdown/templates/analysis-report-html/assets/nibsc.css",
-                                     package="nibscdoc")
+    package = "nibscdoc"
+  )
   templatefile <- system.file("rmarkdown/templates/analysis-report-html/assets/nibsc_template.html",
-                              package="nibscdoc")
+    package = "nibscdoc"
+  )
   renderfunction <- bookdown::html_document2(...,
     template = templatefile,
     css = cssfile,
@@ -34,9 +36,9 @@ report_html <- function(...){
   renderfunction$knitr$opts_chunk$tidy <- TRUE
   renderfunction$knitr$opts_chunk$tidy.opts <- list(blank = FALSE)
   renderfunction$knitr$opts_chunk$cache <- TRUE
-  renderfunction$knitr$opts_chunk$cache.lazy  <-  FALSE
-  renderfunction$knitr$opts_chunk$echo  <-  FALSE
-  renderfunction$knitr$opts_chunk$results  <-  'asis'
+  renderfunction$knitr$opts_chunk$cache.lazy <- FALSE
+  renderfunction$knitr$opts_chunk$echo <- FALSE
+  renderfunction$knitr$opts_chunk$results <- "asis"
   renderfunction$knitr$opts_chunk$fig.wide <- TRUE
   renderfunction$knitr$opts_chunk$fig.align <- "center"
   renderfunction$knitr$opts_chunk$fig.path <- "figures/"
@@ -59,13 +61,13 @@ report_html <- function(...){
 #'
 #' @examples
 #' \dontrun{
-#'    output: nibscdoc::report_word
+#' output:nibscdoc::report_word
 #' }
 #' @import bookdown
-report_word <- function(...){
-
+report_word <- function(...) {
   refdoc <- system.file("rmarkdown/templates/analysis-report-word/assets/nibsc_report_reference.docx",
-                        package="nibscdoc")
+    package = "nibscdoc"
+  )
 
   renderfunction <- bookdown::word_document2(reference_docx = refdoc, ...)
 
@@ -76,17 +78,13 @@ report_word <- function(...){
   renderfunction$knitr$opts_chunk$tidy <- TRUE
   renderfunction$knitr$opts_chunk$tidy.opts <- list(blank = FALSE)
   renderfunction$knitr$opts_chunk$cache <- TRUE
-  renderfunction$knitr$opts_chunk$cache.lazy  <-  FALSE
-  renderfunction$knitr$opts_chunk$echo  <-  FALSE
-  renderfunction$knitr$opts_chunk$results  <-  'asis'
+  renderfunction$knitr$opts_chunk$cache.lazy <- FALSE
+  renderfunction$knitr$opts_chunk$echo <- FALSE
+  renderfunction$knitr$opts_chunk$results <- "asis"
   renderfunction$knitr$opts_chunk$fig.wide <- TRUE
-  renderfunction$knitr$opts_chunk$fig.align <- "center"
   renderfunction$knitr$opts_chunk$fig.path <- "figures/"
   renderfunction$knitr$opts_chunk$fig.pos <- "H"
   renderfunction$knitr$opts_chunk$out.width <- "100%"
 
   renderfunction
-
 }
-
-

@@ -1,0 +1,60 @@
+---
+title: "Title of the Analysis"
+author: 
+  - "First Author"
+  - "Second Author"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: nibscdoc::report_word
+editor_options:
+  chunk_output_type: console
+---
+
+
+```{r, echo=FALSE, message=FALSE, error=FALSE, warning=FALSE}
+library(knitr)
+library(ggplot2)
+```
+
+# Introduction
+
+This is intended to be a test, to verify the rendering function works as it should.
+
+# Results
+
+```{r}
+data(diamonds)
+```
+
+
+## Analysis 1
+
+
+```{r}
+ggplot2::ggplot(diamonds, aes(x=carat, y=price, fill=color, color=color))+
+  ggplot2::geom_point()+
+  ggplot2::geom_smooth()
+```
+
+
+## Analysis 2
+
+
+
+
+```{r}
+ggplot2::ggplot(diamonds, aes(x=carat, y=price, color=cut))+
+  ggplot2::geom_point()+
+  ggplot2::geom_smooth()
+```
+
+
+
+
+# QC
+
+This is just a test, nothing to be shown here.
+
+# Materials and Methods
+
+This is just a test, nothing to be shown here.
+Data use available datasets as part of the *ggplot2* package.
